@@ -23,16 +23,19 @@ body{
 
 header{
     width: 250px;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 5rem);
     position: absolute;
     top: 0;
     left: 0; 
     background-color: black;
 }
 
+a{
+    text-decoration: none;
+}
+
 header a{
     color: grey;
-    text-decoration: none;
 }
 
 header a:hover, .nav-main a:hover{
@@ -127,7 +130,6 @@ header a:hover, .nav-main a:hover{
 
 ul a{
     color: grey;
-    text-decoration: none;
 }
 
 .dwnld-text, .John-text{
@@ -182,16 +184,16 @@ ul a{
 
 main{
     background-color: rgb(20, 25, 34);
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 5rem);
     margin-left: 250px;
     overflow-y: auto;
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     
 }
 
 .contenitore-fixed-sopra{
-    height: 4rem;
+    height: 5rem;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
@@ -209,7 +211,6 @@ main{
     border: 1px solid white;
     color: white;
     border-radius: 100px;
-    text-decoration: none;
     font-size: 80%;
     transition: 0.1s;
     animation-timing-function: linear;
@@ -239,10 +240,21 @@ main{
     padding: 0 1rem;
 }
 
+.green-bar-nav{
+    background-color: lightgreen;
+    width: 40%;
+    height: 3px;
+    margin: auto;
+    margin-top: -0.8rem;
+}
+
+
 /*  SQUARE TOP SECTIONS*/
 
+
 main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
 }
 
 .contenitore-quadrati-main{
@@ -252,7 +264,7 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
     margin-top: 1rem;
 }
 
-.quadrati {
+.quadrati{
     width: 300px;
     margin-right: 1rem;
     text-align: center;
@@ -265,7 +277,6 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
 
 .quadrati a{
     color: grey;
-    text-decoration: none;
 }
 
 .quadrati a h4{
@@ -273,8 +284,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
     margin-bottom: 0.5rem;
 }
 
+.contenitore-quadrati-main p, .h2-and-p p{
+    font-size: 80%;
+}
 
 /* SQUARE CENTER SECTION*/
+
 
 .h2-and-p{
     margin-top: 3rem;
@@ -283,11 +298,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
 .h2-and-p p{
     color: grey;
     margin-top: 0.5rem;
-    font-size: 80%;
+
 }
 
 .middle-end-boxes{
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -305,7 +321,6 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
 
 .JohnDoe-squares a, .bottom-squares a{
     color: white;
-    text-decoration: none;
 }
 
 .flex-grow{
@@ -313,29 +328,9 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
     margin-right: 1rem;
 }
 
-.bianco{
-    background-color: white;
-}
 
-.blu{
-    background-color: blue;
-}
-
-.verde{
-    background-color: green;
-}
-
-.giallo{
-    background-color: yellow;
-}
-.marrone{
-    background-color: brown;
-}
-
-.rosso{
-    background-color: red;
-}
 /* SQUARE BOTTOM SECTION*/
+
 
 .bottom-squares img{
     width: 100%;
@@ -348,28 +343,24 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
 /* MEDIA SECTION */
 
 
-@media  screen and (max-width: 600px) {
+/*@media  screen and (max-width: 600px) {
 
     .contenitore-quadrati-main{
         flex-wrap: wrap;
     }
 
-    .quadrati{
-        width: calc(100% / 2 - 1rem);
-    } 
-
     .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-squares, .bottom-squares{
+    .quadrati, .JohnDoe-squares, .bottom-squares{
         width: calc(100% / 2 - 1rem);
     }
 
     .flex-grow{
         display: none;
     }
-}
+}*/
 
 @media screen and (min-width: 600px) and (max-width: 699px){
 
@@ -378,15 +369,11 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
         justify-content: flex-start;
     }
 
-    .quadrati{
-        width: calc(100% / 2 - 1rem);
-    }  
-
     .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-squares, .bottom-squares{
+    .quadrati, .JohnDoe-squares, .bottom-squares{
         width: calc(100% / 2 - 1rem);
     }
 
@@ -402,15 +389,11 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
         justify-content: flex-start;
     }
 
-    .quadrati{
-        width: calc(100% / 4 - 1rem);
-    }
-
     .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-squares, .bottom-squares{
+    .quadrati, .JohnDoe-squares, .bottom-squares{
         width: calc(100% / 4 - 1rem);
     }
 
@@ -423,9 +406,112 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
 
 
 footer{
-    height: 4rem;
+    height: 5rem;
     background-color: rgb(40, 40, 40);
     display: flex;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
+}
+
+.box-left-footer{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    flex-basis: calc(100% / 3);
+}
+
+.box-left-footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.flex-left-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+    font-size: 80%;
+}
+
+.flex-left-footer a:first-child{
+    color: white;
+
+}
+
+.flex-left-footer a:last-child{
+    color: gray;
+}
+
+.flex-left-footer a:last-child:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.far-icons-footer-left{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.fa-heart{
+    margin-right: 1rem;
+}
+
+.fa-heart, .fa-folder{
+    color: gray;
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
+}
+
+.box-center-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-basis: calc(100% / 3);
+}
+
+.play-center-footer{
+    display: flex;
+    align-items: center;
+}
+
+.play-center-footer i{
+    color: white;
+    margin: 0 1rem;
+}
+
+.fa-play-circle{
+    font-size: 2rem;
+}
+
+.fa-play-circle:hover{
+    transform: scale(1.1);
+}
+
+.music-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size: 50%;
+}
+
+.bar-center{
+    flex-basis: 100%;
+    height: 3px;
+    margin: 0 1rem;
+    background-color: lightgray;
+    border-radius: 100px;
+}
+
+.box-right-footer{
+    display: flex;
+    flex-basis: calc(100% / 3);
+    justify-content: center;
 }
