@@ -11,6 +11,7 @@ html{
 
 body{
     color: white;
+    font-size: 90%;
 }
 
 .container{
@@ -47,7 +48,13 @@ header a:hover, .nav-main a:hover{
     justify-content: space-between;
 }
 
-.flex-start-margin > img{
+.height-margin ul{
+    list-style-type: none;
+    line-height: 2rem;
+    overflow-y: auto;
+}
+
+.header-margin > img{
     width: 70%;
     margin-top: 1rem;
 }
@@ -102,7 +109,6 @@ header a:hover, .nav-main a:hover{
 
 .playlist-logo-plus{
     display: flex;
-    overflow: hidden;
 }
 
 .playlist-logo-plus a:last-child{
@@ -117,12 +123,6 @@ header a:hover, .nav-main a:hover{
 
 .fa-plus{
     color: black;
-}
-
-.flex-start-margin ul{
-    list-style-type: none;
-    line-height: 2rem;
-    overflow-y: auto;
 }
 
 ul a{
@@ -145,8 +145,18 @@ ul a{
     margin: 0.5rem 0;
 }
 
+
+
+
+
+
 .flex-end-header{
     margin-bottom: 0.5rem;
+}
+
+.ul-header{
+    flex-grow: 1;
+
 }
 
 .John-text{
@@ -175,6 +185,8 @@ main{
     height: calc(100vh - 4rem);
     margin-left: 250px;
     overflow-y: auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     
 }
 
@@ -213,7 +225,6 @@ main{
 
 .nav-main{
     width: 100%;
-    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -230,7 +241,7 @@ main{
 
 /*  SQUARE TOP SECTIONS*/
 
-main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
+main > h2, .h2-and-p, .contenitore-quadrati-main, .middle-end-boxes{
     padding: 0 2rem;
 }
 
@@ -242,6 +253,7 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
 }
 
 .quadrati {
+    width: 300px;
     margin-right: 1rem;
     text-align: center;
 }
@@ -271,38 +283,66 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
 .h2-and-p p{
     color: grey;
     margin-top: 0.5rem;
-    font-size: 90%;
+    font-size: 80%;
 }
 
-.JohnDoe-box{
+.middle-end-boxes{
     display: flex;
+    width: 100%;
 }
 
-.JohnDoe-quadrati{
+.JohnDoe-squares, .bottom-squares{
+    width: 300px;
     text-align: center;
     margin-right: 1rem; 
-    flex-basis: calc(100% / 6);
 }
 
-.JohnDoe-quadrati img{
+.JohnDoe-squares img{
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.JohnDoe-quadrati a{
+.JohnDoe-squares a, .bottom-squares a{
     color: white;
     text-decoration: none;
 }
 
 .flex-grow{
-    flex-basis: 66.66%;
-    flex-grow: 1;
+    width: 300px;
+    margin-right: 1rem;
 }
 
+.bianco{
+    background-color: white;
+}
 
+.blu{
+    background-color: blue;
+}
+
+.verde{
+    background-color: green;
+}
+
+.giallo{
+    background-color: yellow;
+}
+.marrone{
+    background-color: brown;
+}
+
+.rosso{
+    background-color: red;
+}
 /* SQUARE BOTTOM SECTION*/
 
+.bottom-squares img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
 
 /* MEDIA SECTION */
@@ -318,12 +358,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
         width: calc(100% / 2 - 1rem);
     } 
 
-    .JohnDoe-box{
+    .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-quadrati{
-        flex-basis: calc(100% / 2 - 1rem);
+    .JohnDoe-squares, .bottom-squares{
+        width: calc(100% / 2 - 1rem);
     }
 
     .flex-grow{
@@ -342,12 +382,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
         width: calc(100% / 2 - 1rem);
     }  
 
-    .JohnDoe-box{
+    .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-quadrati{
-        flex-basis: calc(100% / 2 - 1rem);
+    .JohnDoe-squares, .bottom-squares{
+        width: calc(100% / 2 - 1rem);
     }
 
     .flex-grow{
@@ -366,12 +406,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
         width: calc(100% / 4 - 1rem);
     }
 
-    .JohnDoe-box{
+    .middle-end-boxes{
         flex-wrap: wrap;
     }
 
-    .JohnDoe-quadrati{
-        flex-basis: calc(100% / 4 - 1rem);
+    .JohnDoe-squares, .bottom-squares{
+        width: calc(100% / 4 - 1rem);
     }
 
     .flex-grow{
