@@ -5,7 +5,8 @@
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -21,7 +22,7 @@ body{
 
 header{
     width: 250px;
-    height: calc(100% - 4rem);
+    height: calc(100vh - 4rem);
     position: absolute;
     top: 0;
     left: 0; 
@@ -101,6 +102,7 @@ header a:hover, .nav-main a:hover{
 
 .playlist-logo-plus{
     display: flex;
+    overflow: hidden;
 }
 
 .playlist-logo-plus a:last-child{
@@ -116,10 +118,6 @@ header a:hover, .nav-main a:hover{
 .fa-plus{
     color: black;
 }
-
-/*.flex-start-margin{
-    overflow: auto;
-}*/
 
 .flex-start-margin ul{
     list-style-type: none;
@@ -177,7 +175,6 @@ main{
     height: calc(100vh - 4rem);
     margin-left: 250px;
     overflow-y: auto;
-    padding: 4rem 0;
     
 }
 
@@ -216,6 +213,8 @@ main{
 
 .nav-main{
     width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 .nav-main ul{
@@ -229,7 +228,7 @@ main{
     padding: 0 1rem;
 }
 
-/*  SQUARE SECTIONS*/
+/*  SQUARE TOP SECTIONS*/
 
 main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
     padding: 0 2rem;
@@ -240,60 +239,12 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
     justify-content: space-between;
     width: 100%;
     margin-top: 1rem;
-    background-color: aqua;
 }
+
 .quadrati {
     margin-right: 1rem;
     text-align: center;
 }
-
-
-/* MEDIA SECTION */
-
-
-@media  screen and (max-width: 600px) {
-
-    .contenitore-quadrati-main{
-        flex-wrap: wrap;
-    }
-
-    .quadrati{
-        width: calc(100% / 2 - 1rem);
-    } 
-}
-
-@media screen and (min-width: 600px) and (max-width: 699px){
-
-    .contenitore-quadrati-main{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .quadrati{
-        width: calc(100% / 2 - 1rem);
-    }  
-
-    .JohnDoe-box .secondo{
-        display: none; 
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1100px){
-
-    .contenitore-quadrati-main{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .quadrati{
-        width: calc(100% / 4 - 1rem);
-    }
-
-    .JohnDoe-box .secondo{
-        flex-basis: 50%; 
-    }
-}
-
 
 .quadrati img{
     width: 100%;
@@ -310,28 +261,27 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
     margin-bottom: 0.5rem;
 }
 
+
+/* SQUARE CENTER SECTION*/
+
 .h2-and-p{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .h2-and-p p{
     color: grey;
     margin-top: 0.5rem;
+    font-size: 90%;
 }
 
 .JohnDoe-box{
     display: flex;
-    justify-content: flex-start;
-    background-color: green;
-
 }
 
 .JohnDoe-quadrati{
-    flex-basis: calc(100% / 6);
     text-align: center;
-    margin-right: 1rem;
-    
-   
+    margin-right: 1rem; 
+    flex-basis: calc(100% / 6);
 }
 
 .JohnDoe-quadrati img{
@@ -345,14 +295,89 @@ main > h2, .h2-and-p, .contenitore-quadrati-main, .JohnDoe-box{
     text-decoration: none;
 }
 
-.secondo{
-    flex-basis: 66.6%;
-    background-color: blueviolet;
+.flex-grow{
+    flex-basis: 66.66%;
     flex-grow: 1;
 }
 
 
+/* SQUARE BOTTOM SECTION*/
 
+
+
+/* MEDIA SECTION */
+
+
+@media  screen and (max-width: 600px) {
+
+    .contenitore-quadrati-main{
+        flex-wrap: wrap;
+    }
+
+    .quadrati{
+        width: calc(100% / 2 - 1rem);
+    } 
+
+    .JohnDoe-box{
+        flex-wrap: wrap;
+    }
+
+    .JohnDoe-quadrati{
+        flex-basis: calc(100% / 2 - 1rem);
+    }
+
+    .flex-grow{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px){
+
+    .contenitore-quadrati-main{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .quadrati{
+        width: calc(100% / 2 - 1rem);
+    }  
+
+    .JohnDoe-box{
+        flex-wrap: wrap;
+    }
+
+    .JohnDoe-quadrati{
+        flex-basis: calc(100% / 2 - 1rem);
+    }
+
+    .flex-grow{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){
+
+    .contenitore-quadrati-main{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .quadrati{
+        width: calc(100% / 4 - 1rem);
+    }
+
+    .JohnDoe-box{
+        flex-wrap: wrap;
+    }
+
+    .JohnDoe-quadrati{
+        flex-basis: calc(100% / 4 - 1rem);
+    }
+
+    .flex-grow{
+        display: none;
+    }
+}
 
 /* FOOTER SECTION*/
 
