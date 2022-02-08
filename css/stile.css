@@ -277,7 +277,7 @@ main{
 }
 
 .squares{
-    width: 300px;
+    width: calc(100% / 6);
     margin-right: 1rem;
     text-align: center;
     position: relative;
@@ -335,8 +335,9 @@ main{
 }
 
 .flex-grow{
-    width: 300px;
+    width: calc(100% / 6);
     margin-right: 1rem;
+    visibility: hidden;
 }
 
 
@@ -364,6 +365,10 @@ main{
         margin-left: 50px;
     }
 
+    .container-fixed-top{
+        left: 50px;
+    }
+    
     .container-squares-main{
         flex-wrap: wrap;
     }
@@ -373,8 +378,8 @@ main{
         justify-content: flex-start;
     }
 
-    .quadrati, .JohnDoe-squares, .bottom-squares{
-        width: calc(100% / 2 - 1rem);
+    .squares, .JohnDoe-squares, .bottom-squares{
+        width: calc(100% / 2 -1rem);
     }
 
     .flex-grow{
