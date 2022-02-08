@@ -18,7 +18,9 @@ body{
     position: relative;
 }
 
+
   /* HEADER SECTION*/
+
 
 header{
     width: 250px;
@@ -323,7 +325,8 @@ main{
     font-size: 80%;
 }
 
-/* SQUARE CENTER SECTION*/
+
+    /* SQUARE CENTER SECTION*/
 
 
 .h2-and-p{
@@ -333,7 +336,6 @@ main{
 .h2-and-p p{
     color: grey;
     margin-top: 0.5rem;
-
 }
 
 .middle-end-boxes{
@@ -359,10 +361,10 @@ main{
 }
 
 
-/* SQUARE BOTTOM SECTION*/
+  /* SQUARE BOTTOM SECTION*/
 
 
-.bottom-squares img{
+.bottom img{
     width: 100%;
     border-radius: 50%;
     margin-top: 2rem;
@@ -405,7 +407,6 @@ footer{
 
 .flex-left-footer a:first-child, .box-right-footer a{
     color: white;
-
 }
 
 .flex-left-footer a:last-child{
@@ -619,7 +620,6 @@ footer{
     .container-squares-main{
         flex-wrap: wrap;
         justify-content: flex-start;
-
     }
 
     .middle-end-boxes{
