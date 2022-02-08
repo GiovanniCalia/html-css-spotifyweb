@@ -112,6 +112,10 @@ header a:hover, .nav-main a:hover{
     background-color: white;
 }
 
+.fa-plus{
+    color: black;
+}
+
 .playlist-logo-plus{
     display: flex;
 }
@@ -124,10 +128,6 @@ header a:hover, .nav-main a:hover{
 
 .playlist-logo-plus a:hover{
     color: white;
-}
-
-.fa-plus{
-    color: black;
 }
 
 ul a{
@@ -301,6 +301,8 @@ main{
     margin-bottom: 0.5rem;
 }
 
+.far-circle{
+}
 .container-squares-main p, .h2-and-p p{
     font-size: 80%;
 }
@@ -434,7 +436,7 @@ footer{
     display: flex;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .box-left-footer{
@@ -508,16 +510,15 @@ footer{
 .play-center-footer a{
     color: white;
     margin: 0 1rem;
- 
 }
 
-.fa-play-circle{
+.play-center-footer .fa-play-circle{
     font-size: 2rem;
     transition: 0.1s;
     animation-timing-function: linear;
 }
 
-.fa-play-circle:hover{
+.play-center-footer .fa-play-circle:hover{
     transform: scale(1.1);
 }
 
@@ -553,7 +554,6 @@ footer{
 .circle-bar{
     width: 15px;
     height: 15px;
-   /* margin-left: -0.9rem;*/
     border-radius: 50%;
     background-color: white;
     display: none;
@@ -574,7 +574,7 @@ footer{
     align-items: center;
 }
 
-.box-right-footer a{
+.box-right-footer .fa-grip-lines, .box-right-footer .fa-tv, .box-right-footer .fa-volume-up{
     margin: 0 0.5rem;
 }
 
