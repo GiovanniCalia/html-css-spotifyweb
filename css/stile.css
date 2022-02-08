@@ -50,10 +50,6 @@ header a:hover, .nav-main a:hover{
     justify-content: space-between;
 }
 
-
-/*  FLEX-START-HEADER */
-
-
 .flex-start-header{
     display: flex;
     flex-direction: column;
@@ -148,10 +144,6 @@ ul a{
     height: 2px;
     margin: 0.5rem 0;
 }
-
-
-  /* FLEX-END-HEADER*/
-
 
 .flex-end-header{
     margin-bottom: 0.5rem;
@@ -283,6 +275,15 @@ main{
     position: relative;
 }
 
+.fas-play{
+    font-size: 200%;
+    color: white; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .squares:hover a:first-child{
     opacity: 0.5;
 }
@@ -368,7 +369,7 @@ main{
     .container-fixed-top{
         left: 50px;
     }
-    
+
     .container-squares-main{
         flex-wrap: wrap;
     }
