@@ -15,14 +15,13 @@
 
     <link rel="stylesheet" href="css/stile.css">
 </head>
-<body>
-    <div class="container">
+<body class="container">
 
         <!--HEADER SECTION-->
 
         <header>
             <div class="height-margin">
-                <div>
+                <div class="flex-start-header">
                     <img src="img/logo.svg" alt="Logo Spotify">
 
                     <div class="loghi-header">
@@ -45,22 +44,7 @@
                         <a class="logo-plus"><i class="fas fa-plus"></i></a>
                         <a href="#!">Crea Playlist</a>
                     </div>
-                    <!--<ul>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                        <li><a href="#!">Nome playlist</a></li>
-                    </ul>-->
-                    
-                </div>
-                
-
-                <div class="flex-end-header">
-
-                    <ul class="ul-header"> 
+                    <ul>
                         <li><a href="#!">Nome playlist</a></li>
                         <li><a href="#!">Nome playlist</a></li>
                         <li><a href="#!">Nome playlist</a></li>
@@ -69,18 +53,25 @@
                         <li><a href="#!">Nome playlist</a></li>
                         <li><a href="#!">Nome playlist</a></li>
                     </ul>
-
-                    <div class="dwnld-text">
-                        <img class="logo-bottom-size" src="img/download.svg" alt="Logo download">
-                        <a href="#!">Installa app</a>
-                    </div>
-
-                    <div class="hr-grey"></div>
                     
-                    <div class="John-text" >
-                        <img src="img/profile.svg" alt="Logo profile">
-                        <div>John doe</div>
+                </div>
+                
+
+                <div class="flex-end-header">
+                    <div class="position-absolute">
+                        <div class="dwnld-text">
+                            <img class="logo-bottom-size" src="img/download.svg" alt="Logo download">
+                            <a class="installa" href="#!">Installa app</a>
+                        </div>
+    
+                        <div class="hr-grey"></div>
+                        
+                        <div class="John-text" >
+                            <img src="img/profile.svg" alt="Logo profile">
+                            <div>John doe</div>
+                        </div>
                     </div>
+                    
                 </div>
             </div>       
         </header>
@@ -88,110 +79,114 @@
          <!-- MAIN SECTION-->
     
         <main>
-            <div class="contenitore-fixed-sopra">
-                <a href="#!">EFFETTUA L'UPGRADE</a>
-            </div>
-
-            <nav class="nav-main">
-                <ul>
-                    <li>
-                        <a href="#!">IN EVIDENZA</a>
-                        <div class="green-bar-nav"></div>
-                    </li>
-                    <li><a href="#!">PODCAST</a></li>
-                    <li><a href="#!">CLASSIFICHE</a></li>
-                    <li><a href="#!">GENERI E MOOD</a></li>
-                    <li><a href="#!">NUOVE USCITE</a></li>
-                    <li><a href="#!">SCOPRI</a></li>
-                </ul>
-            </nav>
-
-            <h2>Recently played</h2>
-            <div class="contenitore-quadrati-main"> 
-                <div class="quadrati">
-                    <a href="#!"><img src="img/metal_lifting.jpg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>Heavy metal</h4></a>
-                    <a href="#!"><p>Subtitle</p></a>
+            <div class="box-main">
+                <div class="container-fixed-top">
+                    <button>Effettua l'upgrade</button>
                 </div>
-
-                <div class="quadrati second">
-                    <a href="#!"><img src="img/stranger.jpeg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4></a>
-                    <a href="#!"><p>Kyle Dixon & Michael Stein</p></a>
+    
+                <nav class="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#!">in evidenza</a>
+                            <div class="green-bar-nav"></div>
+                        </li>
+                        <li><a href="#!">podcast</a></li>
+                        <li><a href="#!">clsassifiche</a></li>
+                        <li><a href="#!">generi e mood</a></li>
+                        <li><a href="#!">nuove uscite</a></li>
+                        <li><a href="#!">scopri</a></li>
+                    </ul>
+                </nav>
+    
+                <h2>Recently played</h2>
+                <div class="container-squares-main"> 
+                    <div class="squares">
+                        <a href="#!"><img src="img/metal_lifting.jpg" alt="Heavy metal"><i class="far fa-play-circle"></i></a>
+                        <a href="#!"><h4>Heavy metal</h4></a>
+                        <a href="#!"><p>Subtitle</p></a>
+                    </div>
+    
+                    <div class="squares">
+                        <a href="#!"><img src="img/stranger.jpeg" alt="Heavy metal"></a>
+                        <a href="#!"><h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4></a>
+                        <a href="#!"><p>Kyle Dixon & Michael Stein</p></a>
+                    </div>
+                    
+                    <div class="squares">
+                        <a href="#!"><img src="img/aquietplace.jpeg" alt="Heavy metal"></a>
+                        <a href="#!"><h4>A quiet place</h4></a>
+                        <a href="#!"><p>Subtitle</p></a>
+                    </div>
+    
+                    <div class="squares">
+                        <a href="#!"><img src="img/split.jpeg" alt="Heavy metal"></a>
+                        <a href="#!"><h4>Split</h4></a>
+                        <a href="#!"><p>Subtitle</p></a>
+                    </div>
+    
+                    <div class="squares">
+                        <a href="#!"><img src="img/cure.jpeg" alt="Heavy metal"></a>
+                        <a href="#!"><h4>A cure for wellness</h4></a>
+                        <a href="#!"><p>Subtitle</p></a>
+                    </div>
+    
+                    <div class="squares">
+                        <a href="#!"><img src="img/sinister.jpeg" alt="Heavy metal"></a>
+                        <a href="#!"><h4>Sinister</h4></a>
+                        <a href="#!"><p>Subtitle</p></a>
+                    </div>
                 </div>
-                
-                <div class="quadrati">
-                    <a href="#!"><img src="img/aquietplace.jpeg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>A quiet place</h4></a>
-                    <a href="#!"><p>Subtitle</p></a>
+    
+    
+                <div class="h2-and-p">
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                 </div>
-
-                <div class="quadrati">
-                    <a href="#!"><img src="img/split.jpeg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>Split</h4></a>
-                    <a href="#!"><p>Subtitle</p></a>
+    
+                <div class="middle-end-boxes">
+                    <div class="squares JohnDoe">
+                        <a href="#!"><img src="img/radar.jpeg" alt="Radar"></a>
+                        <a href="#!"><h3>Release Radar</h3> </a>
+                    </div>
+    
+                    <div class="squares JohnDoe">
+                        <a href="#!"><img src="img/mixdaily.jpeg" alt="Daily mix"></a>
+                        <a href="#!"><h3>Daily Mix 1</h3></a>
+                    </div>
+    
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
                 </div>
-
-                <div class="quadrati">
-                    <a href="#!"><img src="img/cure.jpeg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>A cure for wellness</h4></a>
-                    <a href="#!"><p>Subtitle</p></a>
+    
+    
+                <div class="h2-and-p">
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                 </div>
-
-                <div class="quadrati">
-                    <a href="#!"><img src="img/sinister.jpeg" alt="Heavy metal"></a>
-                    <a href="#!"><h4>Sinister</h4></a>
-                    <a href="#!"><p>Subtitle</p></a>
-                </div>
-            </div>
-
-
-            <div class="h2-and-p">
-                <h2>Creato per John Doe</h2>
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
-
-            <div class="middle-end-boxes">
-                <div class="JohnDoe-squares">
-                    <a href="#!"><img src="img/radar.jpeg" alt=""></a>
-                    <a href="#!"><h3>Release Radar</h3> </a>
-                </div>
-
-                <div class="JohnDoe-squares">
-                    <a href="#!"><img src="img/mixdaily.jpeg" alt=""></a>
-                    <a href="#!"><h3>Daily Mix 1</h3></a>
-                </div>
-
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-            </div>
-
-
-            <div class="h2-and-p">
-                <h2>Artisti più popolari</h2>
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
-
-            <div class="middle-end-boxes">
-                <div class="bottom-squares">
-                    <a href="#!"><img src="img/youg.jpeg" alt="Lana del Rey"></a>
-                    <a href="#!"><h3>Lana del Rey</h3> </a>
-                </div>
-
-                <div class="bottom-squares">
-                    <a href="#!"><img src="img/einaudi.jpeg" alt="Einaudi"></a>
-                    <a href="#!"><h3>Ludovico Einaudi</h3></a>
-                </div>
-
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-                <div class="flex-grow "></div>
-            </div>
-        </div>
+    
+                <div class="middle-end-boxes">
+                    <div class="squares bottom">
+                        <a href="#!"><img src="img/youg.jpeg" alt="Lana del Rey"></a>
+                        <a href="#!"><h3>Lana del Rey</h3> </a>
+                    </div>
+    
+                    <div class="squares bottom">
+                        <a href="#!"><img src="img/einaudi.jpeg" alt="Einaudi"></a>
+                        <a href="#!"><h3>Ludovico Einaudi</h3></a>
+                    </div>
+    
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
+                    <div class="flex-grow"></div>
+                </div> 
+            </div> 
         </main>
+
+        <!-- FOOTER SECTION-->
+
         <footer>
             <div class="box-left-footer">
                 <img src="img/sinister.jpeg" alt="Sinister">
@@ -216,23 +211,27 @@
 
                 <div class="music-bar">
                     <div>0:25</div>
-                    <div class="bar-center"></div>
+                    <div class="bar-center">
+                        <div class="bar-center-colored">
+                            <a href="#!" class="circle-bar"></a>
+                        </div>      
+                    </div>
                     <div>4:35</div>
                 </div>
             </div>
 
             <div class="box-right-footer">
-                <div><i class="fas fa-grip-lines"></i></div>
-                <div><i class="fas fa-tv"></i></div>
-                <div><i class="fas fa-volume-up"></i></div>
-                <div class="music-bar-small"></div>
+                <a href="#!"><i class="fas fa-grip-lines"></i></a>
+                <a href="#!"><i class="fas fa-tv"></i></a>
+                <a href="#!"><i class="fas fa-volume-up"></i></a>
+                <div class="music-bar-small">
+                    <div class="bar-center-colored">
+                        <a href="#!" class="circle-bar"></a>
+                    </div> 
+                </div>
             </div>
-            
-            
-            
-    
         </footer>
-    </div>
+
     
 </body>
 </html>
