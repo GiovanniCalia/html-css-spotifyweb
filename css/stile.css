@@ -202,7 +202,7 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 1;
+    z-index: 0;
 }
 
 .container-fixed-top button{
@@ -272,20 +272,28 @@ main{
     width: calc(100% / 6);
     margin-right: 1rem;
     text-align: center;
+}
+
+.hover-play{
     position: relative;
 }
 
-.fas-play{
-    font-size: 200%;
+.hover-play .fa-play-circle{
+    font-size: 3rem;
     color: white; 
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+}
+
+.hover-play:hover .fa-play-circle{
+    display: block;
 }
 
 .squares:hover a:first-child{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .squares img{
@@ -578,7 +586,7 @@ footer{
     align-items: center;
 }
 
-.box-right-footer .fa-grip-lines, .box-right-footer .fa-tv, .box-right-footer .fa-volume-up{
+.box-right-footer .fa-list, .box-right-footer .fa-tv, .box-right-footer .fa-volume-up{
     margin: 0 0.5rem;
 }
 
