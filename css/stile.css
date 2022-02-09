@@ -484,6 +484,7 @@ footer{
     margin: 0 1rem;
     background-color: gray;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .bar-center-colored{
@@ -529,6 +530,7 @@ footer{
     margin: 0 1rem;
     background-color: gray;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 
